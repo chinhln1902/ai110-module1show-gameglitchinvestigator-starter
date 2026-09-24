@@ -25,19 +25,20 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [ ] This is the game allow user guessing a number until they find the correct answer
+- [ ] I found the game allow user to input negative number. And the hint the game gives is wrong. 
+- [ ] Both bugs are fixed inside logic_utils.py. Claude added another check to check negative numbers in parse_guess method. And fixed the hint in check_guess method. For the logging tool, the fix applied in app.py.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a number. For example 70
+2. Game returns "Too low"
+3. User enters 80
+4. Game returns "Too high"
+5. User enters 75
+6. Game displays ballon and congrat message and ends there.
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
@@ -46,7 +47,7 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 ```
 # Paste your pytest output here, e.g.:
 # pytest tests/
-# ========================= X passed in 0.XXs =========================
+# =========================  28 passed in 6.36s =========================
 ```
 
 ## 🚀 Stretch Features
